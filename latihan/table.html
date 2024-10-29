@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwalku</title>
+    <style>
+        body {
+            background-image: url(download.jpeg); 
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            font-family: Arial, sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        
+        .container{
+        position: relative;
+        max-width: 900px;
+        width: 100%;
+        border: 2px dashed white;
+        background-color: color-mix(in srgb, rgb(193, 109, 201) 50%, transparent 50%);
+        box-shadow: 5px 5px 5px 5px;color: rgb(255, 255, 255);
+        padding: 60px;
+        border-radius: 40px;
+    }
+        .container header{
+        font-size: 1rem;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 15px;
+        border-bottom: 2px dashed white;
+        }
+       
+          h3 {
+             text-align: center;
+             text-transform: uppercase;
+             margin: 10px;
+          }
+      
+          .jadwal {
+            width: 100%;
+            max-width: 750px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+       
+         .jadwal table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+            max-width: 750px;
+            border: dashed 2px white;
+         }  
+         
+        .jadwal th, .jadwal td {
+            border: 1px solid #fff;
+            padding: 10px;
+            font-size: 12px;
+        }
+    
+        .highlight:hover{
+                background-color: #000000;
+  
+        }
+
+        @media (max-width: 50px) {
+        .main {
+          width: 50vh;
+        }
+        .imput {
+          width: 45vh;
+        }
+    }
+    
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+       <h3>Jadwalku</h3>
+     <div class="jadwal">
+        <table>
+          <tr>
+              <th class="highlight">Jam</th>
+              <th class="highlight">Senin</th>
+              <th class="highlight">Selasa</th>
+              <th class="highlight">Rabu</th>
+              <th class="highlight">Kamis</th>
+              <th class="highlight">Jumat</th>
+          </tr>
+          <tr>
+              <td class="highlight">1</td>
+              <td class="highlight" rowspan="3">PAG</td>
+              <td class="highlight" rowspan="3">DPPLG</td>
+              <td class="highlight" rowspan="2">BNG</td>
+              <td class="highlight" rowspan="3">IPAS</td>
+              <td class="highlight" rowspan="2">DPPLG</td>
+          </tr>
+          <tr>
+              <td class="highlight">2</td>     
+          </tr>
+          <tr>
+              <td class="highlight">3</td>
+              <td class="highlight" rowspan="1">SNM</td>
+              <td class="highlight" rowspan="1">MTK</td>
+          </tr>
+  
+          <tr>
+              <td class="highlight" colspan="6">IST</td>
+          </tr>
+  
+          <tr>
+              <td class="highlight">4</td>
+              <td class="highlight" rowspan="3">POR</td>
+              <td class="highlight" rowspan="3">DPPLG</td>
+              <td class="highlight" rowspan="1">SNM</td>
+              <td class="highlight" rowspan="3">IPAS</td>
+              <td class="highlight" rowspan="1">MTK</td>
+          </tr>
+          <tr>
+              <td class="highlight">5</td>
+              <td class="highlight" rowspan="2">SJR</td>
+              <td class="highlight" rowspan="2">PPS</td>
+          </tr>
+          <tr>
+              <td class="highlight">6</td>
+          </tr>
+  
+          <tr>
+              <td class="highlight" colspan="6">IST</td>
+          </tr>
+  
+          <tr>
+              <td class="highlight">7</td>
+              <td class="highlight" rowspan="2">MTK</td>
+              <td class="highlight" rowspan="4">DPPLG</td>
+              <td class="highlight" rowspan="2">BIN</td>
+              <td class="highlight" rowspan="4">INF</td>
+              <td class="highlight" rowspan="2">BIN</td>
+          </tr>
+          <tr>
+              <td class="highlight">8</td>
+          </tr>
+          <tr>
+              <td class="highlight">9</td>
+              <td class="highlight" rowspan="2">BNG</td>
+              <td class="highlight" rowspan="2">BJW</td>
+              <td class="highlight" rowspan="2"></td>
+          </tr>
+          <tr>
+              <td class="highlight">10</td>
+          </tr>
+       </table>
+     </div>
+    </div>
+    <style>
+  </style>
+  </body>
+</html>
