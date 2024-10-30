@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulir Anggota Perpustakaan</title>
+        <style>
+        body {
+            background-image: url(download.jpeg); 
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            justify-content: center;
+            padding: 200px;
+            align-items: center;
+            
+        }
+        .container {
+            width: 100%;
+            border: 2px dashed;
+            background-color: white;
+            background-color: color-mix(in srgb, rgb(214, 137, 185) 50%, transparent 50%);
+            box-shadow: 5px 5px 5px 5px;color: rgb(255, 255, 255);
+            padding: 20px 40px;
+            border-radius: 20px;
+            margin:50px auto;
+            
+        }
+        .input{
+            margin: 9px;
+        }
+        .container h3 {
+            text-align: center;      
+            margin: 17px;
+            text-transform: uppercase; 
+        }
+        hr {
+        border-top: 1px solid #fff;
+        border: dashed 2px white;
+        }
+        
+        form label {
+        width: 50%; 
+        max-width: 400px;  
+        margin-top: 10px;
+        font-weight: bold;
+        color: #ffffff;
+        }
+        form input[type="text"],
+        form input[type="date"],
+        form input[type="tel"],
+        textarea,
+        form select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        }
+        .button-group {
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 15px;
+            width: auto;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .clear-button {
+            background-color: #ffffff;
+            color: navy; 
+        }
+
+        .send-button {
+            background-color:  #ffffff;
+            color: navy; 
+        }
+
+        @media (max-width: 900px) {
+            .container {
+                padding: 10px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Formulir Anggota Perpustakaan</h3>
+            <hr>
+      <form action="">
+             
+             <label for="nama">Nama :</label>
+      </br>
+             <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu">
+             </br>
+             
+             Kota Lahir : <input type="text" list="kota_lahir" name="kota_lahir" placeholder="ketikan nama kota lahir">
+             <br>
+             <datalist id="kota_lahir">
+                <select name="kota_lahir">
+                    <option value="Semarang">Semarang </option>
+                    <option value="Banjarnegara">Banjarnegara </option>
+                    <option value="Jogja">Jogja </option>
+                    <option value="Solo">Solo </option>
+                    <option value="Balikpapan">Balikpapan </option>
+                    <option value="Jakarta">Jakarta </option>
+                </select>
+            </datalist>
+            <br>
+            
+             <label for="tanggal_lahir">Tanggal Lahir :</label>
+            </br>
+             <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+             </br>
+             
+             <label>Gender :</label>
+            </br>
+             <div class="radio-group">
+                 <label><input type="radio" name="gender" value="pria"> Pria</label> 
+                 <label><input type="radio" name="gender" value="wanita"> Wanita</label>
+             </div>
+            </br>
+             
+             <label for="telepon">No Telepon :</label>
+            </br>
+             <input type="tel" id="telepon" name="telepon" placeholder="Masukkan nomor telepon">
+             </br>
+          
+             <label>Makanan Favorit :</label>
+            </br>
+             <div class="checkbox-group">
+                 <label><input type="checkbox" name="makanan" value="nasigoreng"> Nasi Goreng</label>
+                 <label><input type="checkbox" name="makanan" value="miegoreng"> Mie Goreng</label>
+                 <label><input type="checkbox" name="makanan" value="eskrim"> Es Krim</label>
+                 <label><input type="checkbox" name="makanan" value="mochi"> Mochi</label>
+             </div>
+             </br>
+            
+             <label for="agama">Agama :</label>
+            </br>
+             <select id="agama" name="agama">
+                 <option value="opsi">Pilih</option>
+                 <option value="islam">Islam</option>
+                 <option value="kristen">Kristen</option>
+                 <option value="katolik">Katolik</option>
+                 <option value="hindu">Hindu</option>
+                 <option value="buddha">Buddha</option>
+                 <option value="khonghucu">Khonghucu</option>
+             </select>
+             </br>
+             
+             <label for="alamat">Alamat :</label>
+             <textarea id="alamat" name="alamat" rows="3" placeholder="Ketikan alamat kamu"></textarea>
+             </br>
+            
+             <div class="button-group">
+                 <button type="reset" class="clear-button">Clear</button>
+                 <button type="submit" class="send-button">Send</button>
+             </div>
+        </form>
+     </div>    
+    </body> 
+ </html>
